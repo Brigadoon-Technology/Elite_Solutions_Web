@@ -1,0 +1,32 @@
+<form action="sendmail.php" method="post" id="ContactForm">
+            <label>Name:</label>
+            <br />
+            <input name="name" type="text" id="name" />
+            <br />
+            <label>Email:</label>
+            <br />
+            <input name="email" type="text" id="email"/>
+            <br />
+            <label>Subject:</label>
+            <br />
+            <input name="subject" type="text" id="subject"/>
+            <br />
+            <label>Comments:</label>
+            <br />
+	    <textarea name="Questions" cols="50" rows="10" id="message"></textarea>
+            <script type="text/javascript"
+     src="http://www.google.com/recaptcha/api/challenge?k=6Ldy0sISAAAAAKRpUWRkL49bM4qvufeC3ae9cou1">
+  </script>
+  <noscript>
+     <iframe src="http://www.google.com/recaptcha/api/noscript?k=6Ldy0sISAAAAAKRpUWRkL49bM4qvufeC3ae9cou1"
+         height="300" width="500" frameborder="0"></iframe><br />
+     <textarea name="recaptcha_challenge_field" rows="3" cols="40">
+     </textarea>
+     <input type="hidden" name="recaptcha_response_field"
+         value="manual_challenge" />
+  </noscript>
+            </label>
+            <br />
+            <input name="Submit" type="submit" value="Submit" />
+            <br />
+		 </form>
